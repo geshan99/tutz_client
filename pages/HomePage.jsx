@@ -1,9 +1,9 @@
-import NavBar from "@/components/Navbar";
 import SingleAd from "./SingleAd";
 import BackgroundImage from "public/Images/Background.png";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/system";
+import Navbar from "@/components/Navbar";
 
 const CustomButton = styled(Button)(() => ({
   border: "1px solid #228BE6",
@@ -31,7 +31,7 @@ function HomePage() {
             "radial-gradient(75.88% 75.88% at 16.11% 80.85%,rgba(2, 158, 235, 0.23577) 0%, rgba(2, 158, 235, 0.5) 0%, rgba(2, 158, 235, 0)88.12%);",
         }}
       >
-        <NavBar />
+        {/* <Navbar /> */}
         <Box
           sx={{
             // marginTop: "70px",
