@@ -4,6 +4,7 @@ import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/system";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Footer from "@/components/Footer";
 
 const CustomButton = styled(Button)(({ selected }) => ({
   border: "1px solid #228BE6",
@@ -162,8 +163,9 @@ function HomePage() {
                         color: "#000000",
                       }}
                     >
-                      <div>Do you have classes?</div>
-                      Post your ad and start finding students
+                      Do you have classes?
+                      <br></br>
+                      Post your ad and start finding students.
                     </Typography>
                     <CustomButton
                       selected={true}
@@ -214,7 +216,8 @@ function HomePage() {
                         color: "#000000",
                       }}
                     >
-                      <div>Do you want to find a tutor?</div>
+                      Do you want to find a tutor?
+                      <br></br>
                       Post your request and start finding tutors.
                     </Typography>
                     <CustomButton
@@ -236,7 +239,7 @@ function HomePage() {
             backgroundColor: "#ffffff",
           }}
         >
-          Footer
+          <Footer />
         </Box>
         <Box
           sx={{
